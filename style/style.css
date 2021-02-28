@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(223, 218, 217);
+
+  width: 1020px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+nav {
+  background-color: beige;
+  width: 100px;
+  height: 100%;
+}
+
+#divUsun{
+    background-color: rgb(240, 70, 64);
+}
+
+
+.druk1 tr,
+.druk1 tr td {
+  height: 16px;
+  width: 70px;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.druk2 tr,
+.druk2 tr td {
+  height: 16px;
+  width: 120px;
+  text-align: left;
+}
+
+.hideValue {
+  display: none;
+}
+
+.tableS,
+.tableS input,
+input {
+  width: 70px;
+  text-align: center;
+  height: 16px;
+}
+
+input {
+  width: 150px;
+}
+.longInput{
+    width: 300px;
+  }
+
+#formS {
+  background-color: rgb(145, 223, 236);
+}
+
+label {
+  display: block;
+  width: 150px;
+  float: left;
+}
