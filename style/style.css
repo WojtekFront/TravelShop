@@ -1,22 +1,38 @@
-body {
-  background-color: rgb(223, 218, 217);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #f1f1f1;
   width: 1020px;
   margin-right: auto;
   margin-left: auto;
   display: block;
+  font-family: "VT323", sans-serif;
+  color: #494949;
+  letter-spacing: 0.1rem;
+  font-size: 17px;
 }
 
+.nav,
 nav {
-  background-color: beige;
-  width: 100px;
-  height: 100%;
+  background-color: #d5d5d5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
 }
 
-#divUsun{
-    background-color: rgb(240, 70, 64);
+#wydruk{
+  background-color: #a5fb88;
+
 }
 
+#divUsun {
+  background-color: #ffadff;
+}
 
 .druk1 tr,
 .druk1 tr td {
@@ -48,10 +64,11 @@ input {
 
 input {
   width: 150px;
+
 }
-.longInput{
-    width: 300px;
-  }
+.longInput {
+  width: 300px;
+}
 
 #formS {
   background-color: rgb(145, 223, 236);
@@ -61,4 +78,47 @@ label {
   display: block;
   width: 150px;
   float: left;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #494949;
+  font-size: 150%;
+}
+
+.burger{
+  display:none;
+}
+
+.burger div{
+  width:25px;
+  height:5px;
+  background-color: #494949;
+  margin: 5px;
+}
+
+
+
+@media screen and (max-width:1024px){
+  .nav-links{
+    width:60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .nav-links{
+    width:100%;
+  }
 }
