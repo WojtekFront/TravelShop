@@ -1,9 +1,8 @@
 <?php
 include_once 'conn.php';
-$deleteValue = $_POST['deleteI'];
 
-if (true) {
-
+if (isset($_POST['usun']) && is_numeric($_POST['deleteI'])) {
+    $deleteValue = $_POST['deleteI'];
 
     $cos = "UPDATE new_order SET active='0' WHERE id=" . $deleteValue . ";";
     mysqli_query($conn, $cos);
