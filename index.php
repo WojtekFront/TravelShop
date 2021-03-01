@@ -9,15 +9,32 @@ include_once 'php/conn.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link href='http://fonts.googleapis.com/css?family=VT323&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <title>Strona do wystawiania faktur:</title>
 </head>
 
 <body>
 
-    <nav>
-
-
-    </nav>
+<nav><ul class="nav-links">
+    <li>
+        <a href="#">faktury</a>
+    </li>
+    <li>
+        <a href="#">usun</a>
+    </li>
+    <li>
+        <a href="#">dodaj</a>
+    </li>
+    <li>
+        <a href="#">kontakt</a>
+    </li>
+</ul>
+<div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+</nav>
     <main>
         <div id="wydruk">
 
