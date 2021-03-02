@@ -25,13 +25,12 @@ nav {
   min-height: 8vh;
 }
 
-#wydruk{
-  background-color: #a5fb88;
-
+#wydruk {
+  background-color: #bffaab;
 }
 
 #divUsun {
-  background-color: #ffadff;
+  background-color: #fdcaf6;
 }
 
 .druk1 tr,
@@ -64,14 +63,13 @@ input {
 
 input {
   width: 150px;
-
 }
 .longInput {
   width: 300px;
 }
 
 #formS {
-  background-color: rgb(145, 223, 236);
+  background-color: #bcf2f0;
 }
 
 label {
@@ -98,27 +96,47 @@ label {
   font-size: 150%;
 }
 
-.burger{
-  display:none;
+.burger {
+  display: none;
 }
 
-.burger div{
-  width:25px;
-  height:5px;
+.burger div {
+  width: 25px;
+  height: 5px;
   background-color: #494949;
   margin: 5px;
 }
 
-
-
-@media screen and (max-width:1024px){
-  .nav-links{
-    width:60%;
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
   }
 }
 
-@media screen and (max-width:768px){
-  .nav-links{
-    width:100%;
+@media screen and (max-width: 680px) {
+  body {
+    overflow-x: hidden;
+    cursor: pointer;
   }
+  .nav-links {
+    position: absolute;
+    left: 0px;
+    height: 92vh;
+    right: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition:transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+.nav-active{
+  transform: translateX(0%);
 }
